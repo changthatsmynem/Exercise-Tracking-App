@@ -1,0 +1,18 @@
+:root {
+  --nunito-font: Nunito Sans, sans-serif;
+  --inter-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --green: #066C6B;
+  --yellow: #F3BD18;
+  --red: #EF4B3F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:hover {
+  cursor: pointer;
+}

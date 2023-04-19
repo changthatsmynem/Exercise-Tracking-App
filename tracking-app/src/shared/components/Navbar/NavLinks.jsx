@@ -2,26 +2,26 @@ import { useLayoutEffect, useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 
 //styles for navlinks
-import styles from "./NavLinks.module.css";
+import "./NavLinks.css";
 
-//auth-context
-// import { AuthContext } from "../../context/AuthContext";
+//auth context
+import { AuthContext } from "../../context/auth-context";
 
 const NavLinks = () => {
-  //   const auth = useContext(AuthContext);
+  const auth = useContext(AuthContext);
 
   return (
-    <ul className={styles["nav-links"]}>
+    <ul className="nav-links">
       <li>
         <NavLink to="/" exact>
           Home
         </NavLink>
       </li>
       <li>
-        <NavLink to="/u1">Login</NavLink>
+        <NavLink to="/login">Login</NavLink>
       </li>
       <li>
-        <NavLink to="/">Logout</NavLink>
+        <NavLink>Logout</NavLink>
       </li>
     </ul>
   );

@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 //styles
-import styles from "./Button.module.css";
+import "./Button.css";
 
 const Button = (props) => {
-  return <button className={styles}>Button</button>;
+  return <button className="button-main">Button</button>;
 };
 
 export default Button;
