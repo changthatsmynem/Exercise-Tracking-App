@@ -1,0 +1,14 @@
+.main-nav_title {
+    color: white;
+    font-family: Inter;
+}
+
+.main-nav_title a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav_title a:hover {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    color: #066C6B;
+}
