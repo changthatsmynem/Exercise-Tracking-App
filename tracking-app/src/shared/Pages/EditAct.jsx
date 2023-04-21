@@ -5,8 +5,8 @@ import "./EditAct.css"
 function FormActivityCard (){
     return (
         <div>
+        <MainNav />
             <div className="EditBackground">
-                <MainNav />
                 <HeaderActivityCard />
                 <ActivitiesChoice />
                 <ActivityInput />
@@ -29,7 +29,7 @@ function HeaderActivityCard (){
 function ActivitiesChoice (){
     return (
         <div>
-            <div className="Icon">
+            <div className="Icon-activitycad">
                 <img id="addicon" src="https://cdn3.iconfinder.com/data/icons/feather-5/24/refresh-cw-256.png"/>
                 <img id="addicon" src="https://cdn3.iconfinder.com/data/icons/feather-5/24/refresh-cw-256.png"/>
                 <img id="addicon" src="https://cdn3.iconfinder.com/data/icons/feather-5/24/refresh-cw-256.png"/>
@@ -44,8 +44,8 @@ function ActivitiesChoice (){
 function ActivityInput (){
     return (
         <div >
-            <div className="ParentGroup">
-                <div className="group1">
+            <div className="ActivityInput-ParentGroup">
+                <div className="ActivityInput-group1">
                     <label className="gapact">Activity Name</label>
                     <input id="actinput0" type="text" placeholder="activity name" />
                         <div className="gc1">   
@@ -59,15 +59,15 @@ function ActivityInput (){
                         </div>
                     <br />
                     {/* เหลือใส่โค้ดให้เซฟรูปได้คิดยังไม่ออก */}
-                </div>
-                <div className="group2">
-                    <label className="gapact">Activity Detail</label>
+                </div>  
+                <div className="ActivityInput-group2">
+                    <label id="Label-Activity-Detail" className="gapact">Activity Detail</label>
                     <input id="actinput1" type="text" placeholder="activity detail" />
-                    <input type="date" placeholder="Date" />
+                    <input type="datetime-local" placeholder="Date" />
                 </div>
             </div>
-            <div className="group3">
-                <input id="distance" type="text" placeholder="Distance                                                                      KM" />
+            <div className="ActivityInput-group3">
+                <input id="distance" type="text" placeholder="Distance                                                                                                   KM" />
                 <button id="submit"> Submit </button>
             </div>
         </div>
