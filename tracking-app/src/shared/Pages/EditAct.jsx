@@ -1,8 +1,16 @@
 import React from "react";
 import MainNav from "../components/Navbar/MainNav";
+import { useState } from "react";
 import "./EditAct.css" 
 
 function FormActivityCard (){
+    
+    const [SelectedActivity,setSelectedActivity] = useState(null)
+    
+    function onSelectedActivity(activity) {
+        setSelectedActivity(activity)
+    }
+    
     return (
         <div>
         <MainNav />
@@ -29,12 +37,37 @@ function HeaderActivityCard (){
 function ActivitiesChoice (){
     return (
         <div>
-            <div className="Icon-activitycad">
-                <img id="addicon" src="https://cdn3.iconfinder.com/data/icons/feather-5/24/refresh-cw-256.png"/>
-                <img id="addicon" src="https://cdn3.iconfinder.com/data/icons/feather-5/24/refresh-cw-256.png"/>
-                <img id="addicon" src="https://cdn3.iconfinder.com/data/icons/feather-5/24/refresh-cw-256.png"/>
-                <img id="addicon" src="https://cdn3.iconfinder.com/data/icons/feather-5/24/refresh-cw-256.png"/>
-                <img id="addicon" src="https://cdn3.iconfinder.com/data/icons/feather-5/24/refresh-cw-256.png"/>
+            <div className="Icon-activitycard">
+                <img 
+                    onClick={() => onSelectedActivity}
+                    // ../ ทำไมถึงย้อนไปไกลจัง
+                    src="../src/shared/components/icons/walk_480.png"
+                    alt="Walking"
+                />
+               
+                <img                    
+                    onClick={() => onSelectedActivity}
+                    src="../src/shared/components/icons/running_480.png"    
+                    alt="Running" 
+                />
+               
+                <img 
+                    onClick={() => onSelectedActivity}
+                    src="../src/shared/components/icons/hiking_480.png" 
+                    alt="Hiking"
+                />
+               
+                <img 
+                    onClick={() => onSelectedActivity} 
+                    src="../src/shared/components/icons/bicycle_480.png"
+                    alt="Cycling"
+                />
+                
+                <img 
+                    onClick={() => onSelectedActivity}
+                    src="../src/shared/components/icons/swimming_480.png" 
+                    alt="Swimming"
+                />
             </div>
         </div>
     )

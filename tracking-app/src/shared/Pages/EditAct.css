@@ -31,7 +31,7 @@
         font-size: 32px;
     }
 
-    .Icon-activitycad {
+    .Icon-activitycard {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -39,7 +39,7 @@
         padding: 18px;
     }
 
-    #addicon {
+    .Icon-activitycard > img {
         width: 150px;
     }
 
@@ -172,7 +172,7 @@
         }
     
         
-        .Icon-activitycad {
+        .Icon-activitycard {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -180,7 +180,7 @@
             padding: 20px;
         }
 
-        #addicon {
+        .Icon-activitycard > img {
             width: 45px;
         }
 
