@@ -47,7 +47,7 @@ const RegisterForm = () => {
     {
       id:4,
       name:"password",
-      type:"text",
+      type:"password",
       placeholder:"Password",
       errorMessage:
       "Password should have 8-20 characters and include at least 1 Lowercase, 1 Uppercase and 1 number.",
