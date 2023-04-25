@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import RegistComplete from "./shared/Pages/RegistComplete";
+import AddActivity from "./shared/Pages/AddActivity";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
