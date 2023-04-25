@@ -3,8 +3,6 @@ import ReactDOM from "react-dom/client";
 
 //components
 import App from "./App";
-import LoginForm from "./shared/components/FormInput/LoginForm";
-import RegisterForm from "./shared/components/FormInput/RegisterForm";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 

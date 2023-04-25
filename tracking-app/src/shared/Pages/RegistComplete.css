@@ -1,0 +1,16 @@
+@import '../components/Global.css';
+
+.regist-bg {
+    display: block;
+    margin-top: 0em;
+}
+
+.regist-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+    padding: 100px 100px;
+    background-color: lightgrey;
+}
