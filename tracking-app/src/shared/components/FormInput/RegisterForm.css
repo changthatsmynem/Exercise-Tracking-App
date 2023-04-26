@@ -27,6 +27,10 @@ form{
     height: 779px;
     border-radius: 20px;
     margin-top: 62px;
+    background: transparent;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(100px);
+    /* โดย มิสเตอร์วิววี่ */
 }
 
 .header-registration-word{
@@ -91,6 +95,11 @@ form{
     
 }
 
+.register-input:valid{
+    background-color: rgb(174, 247, 222);
+
+}
+
 .register-input:invalid{
     background-color: rgb(255, 208, 230);
     border-color: red;
@@ -132,6 +141,9 @@ form{
         height: 697px;
         border-radius: 20px;
         margin-top: 62px;
+        background: transparent;
+        box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);; 
+        backdrop-filter: blur(100px);
     }
     
     .header-registration-word{
@@ -207,6 +219,9 @@ form{
         height: 727px;
         border-radius: 20px;
         margin-top: 62px;
+        background: transparent;
+        box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);; 
+        backdrop-filter: blur(100px);
     }
     
     .header-registration-word{
@@ -282,6 +297,9 @@ form{
         height: 1062px;
         border-radius: 20px;
         margin-top: 62px;
+        background: transparent;
+        box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);; 
+        backdrop-filter: blur(100px);
     }
     
     .header-registration-word{
@@ -361,6 +379,9 @@ form{
         height: 727px;
         border-radius: 20px;
         margin-top: 62px;
+        background: transparent;
+        box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);; 
+        backdrop-filter: blur(100px);
     }
     
     .header-registration-word{
@@ -436,6 +457,9 @@ form{
         height: 748px;
         border-radius: 20px;
         margin-top: 66px;
+        background: transparent;
+        box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);; 
+        backdrop-filter: blur(100px);
     }
     
     .header-registration-word{
@@ -511,6 +535,9 @@ form{
         height: 727px;
         border-radius: 20px;
         margin-top: 62px;
+        background: transparent;
+        box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);; 
+        backdrop-filter: blur(100px);
     }
     
     .header-registration-word{
