@@ -1,0 +1,40 @@
+@import '../Global.css';
+
+.input-custom {
+    margin: 2rem 0;
+}
+
+.input-custom label, .input-custom input, .input-custom textarea{
+    display: block;
+    font-family: var(--nunito-font);
+}
+
+.input-custom label {
+    font-weight: 800;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.input-custom input, .input-custom textarea {
+    width: 100%;
+    padding: 0.4rem 0.25rem;
+    font-size: 1.15rem;
+    border: 1px solid #ccc;
+    border-radius: 0.75rem;
+    background: #f8f8f8;
+}
+
+.input-custom input:focus, .input-custom textarea:focus {
+    outline: none;
+    background: #ebebeb;
+    border-color: #510077;
+}
+
+.input-custom--invalid label, .input-custom--invalid p {
+    color: red;
+}
+
+.input-custom--invalid input, .input-custom--invalid textarea {
+    border-color: red;
+    background-color: #ffd1d1;
+}
