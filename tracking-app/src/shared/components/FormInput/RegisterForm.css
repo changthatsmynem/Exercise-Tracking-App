@@ -20,7 +20,7 @@
     width: 100%;
 }
 
-form{
+.registration-form-section{
     background-color: #d2d2d2;
     padding: 24px 20px;
     width: 750px;
@@ -133,7 +133,7 @@ form{
         width: 100%;
     }
 
-    form{
+    .registration-form-section{
         background-color: #d2d2d2;
         padding: 24px 9px;
         width: 750px;
@@ -215,7 +215,7 @@ form{
         width: 100vw;
     }
 
-    form{
+    .registration-form-section{
         background-color: #d2d2d2;
         padding: 24px 9px;
         width: 600px;
@@ -293,7 +293,7 @@ form{
         width: 100vw;
     }
 
-    form{
+    .registration-form-section{
         background-color: #d2d2d2;
         padding: 24px 9px;
         width: 750px;
@@ -375,7 +375,7 @@ form{
         width: 100%;
     }
 
-    form{
+    .registration-form-section{
         background-color: #d2d2d2;
         padding: 24px 9px;
         width: 344px;
@@ -453,7 +453,7 @@ form{
         width: 100%;
     }
 
-    form{
+    .registration-form-section{
         background-color: #d2d2d2;
         padding: 0px 9px;
         width: 344px;
@@ -531,7 +531,7 @@ form{
         width: 100%;
     }
 
-    form{
+    .registration-form-section{
         background-color: #d2d2d2;
         padding: 24px 9px;
         width: 344px;

@@ -85,7 +85,7 @@ const RegisterForm = () => {
         <MainNav />
       </div>
       <div className="register-form">
-        <form  onSubmit={handleSubmit}>
+        <form className="registration-form-section" onSubmit={handleSubmit}>
           <h1 className="header-registration-word">Registration</h1>
           {input.map((input) =>  (
             <RegisterInputForm 
