@@ -1,0 +1,41 @@
+@import '../Global.css';
+
+.regist-bg {
+    display: block;
+    margin-top: 0em;
+}
+
+.regist-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    text-align: center;
+    padding: 100px 100px;
+    background-color: lightgrey;
+}
+
+.icon-selector-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 100px 100px;
+  }
+  
+  .icon-selector-container img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-selector-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon-selector-container img.selected {
+    border: 2px solid blue;
+  }
