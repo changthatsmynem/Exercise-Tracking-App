@@ -17,6 +17,8 @@
     margin: 10rem auto;
     text-align: center;
     overflow: hidden;
+    background: transparent;
+    backdrop-filter: blur(100px);
 }
 
 .login-form form {
