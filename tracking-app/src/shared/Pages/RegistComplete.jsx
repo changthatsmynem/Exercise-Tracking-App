@@ -12,7 +12,7 @@ const RegistComplete = () => {
                 <img src="App logo"/>
                 <h1>Register Complete</h1>
                 <p>Thank you for signing up with us</p>
-                <a href="/signin"><span>Sign in here!</span></a>
+                <a href="/login"><span>Sign in here!</span></a>
             </div>
         
 
