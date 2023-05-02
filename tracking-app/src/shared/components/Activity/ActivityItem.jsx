@@ -10,7 +10,9 @@ const ActivityItem = () => {
 
   return (
     <div className="regist-container">
-      <h2>Select an Activity</h2>
+          <h1>Add Activity</h1>
+          <h2>Select an Activity</h2>
+      <div className="icon-list">
       <div className="icon-selector-container">
         <img
           src="./walk_480.png"
@@ -33,7 +35,7 @@ const ActivityItem = () => {
           }}
         />
         <img
-          src="./swimming_480.png"
+          src="https://github.com/changthatsmynem/Exercise-Tracking-App/blob/feature/editact/tracking-app/src/shared/components/icons/swimming_480.png"
           alt="swim"
           onClick={() => handleIconSelect("swim")}
           style={{
@@ -43,7 +45,7 @@ const ActivityItem = () => {
           }}
         />
         <img
-          src="./bicycle_480.png"
+          src="https://github.com/changthatsmynem/Exercise-Tracking-App/blob/feature/editact/tracking-app/src/shared/components/icons/bicycle_480.png"
           alt="bike"
           onClick={() => handleIconSelect("bike")}
           style={{
@@ -53,7 +55,7 @@ const ActivityItem = () => {
           }}
         />
         <img
-          src="./hiking_480.png"
+          src="https://github.com/changthatsmynem/Exercise-Tracking-App/blob/feature/editact/tracking-app/src/shared/components/icons/hiking_480.png"
           alt="hike"
           onClick={() => handleIconSelect("hike")}
           style={{
@@ -62,6 +64,7 @@ const ActivityItem = () => {
             border: selectedIcon === "hike" ? "2px solid blue" : "none",
           }}
         />
+      </div>
       </div>
       <h3>You have selected: {selectedIcon}</h3>
     </div>
