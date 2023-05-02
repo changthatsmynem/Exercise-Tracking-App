@@ -16,6 +16,7 @@ const router = createBrowserRouter([
     path: "/registcomplete",
     element: <RegistComplete />,
   },
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
