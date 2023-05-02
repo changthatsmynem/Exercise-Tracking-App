@@ -33,7 +33,7 @@ const ActivityItem = () => {
           }}
         />
         <img
-          src="./swim_480.png"
+          src="./swimming_480.png"
           alt="swim"
           onClick={() => handleIconSelect("swim")}
           style={{
