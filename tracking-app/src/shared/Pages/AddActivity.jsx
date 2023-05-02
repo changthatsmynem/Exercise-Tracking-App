@@ -26,23 +26,28 @@ const FormCard = () => {
 
   return (
     <div>
-      <HeaderForm />
+      {/* <div className="Header-form">
+        <div className="Head-field">
+          <h1>Add Activity</h1>
+          <p>Activity Type</p>
+        </div>
+        </div> */}
       <ActivityItem />
       <ExerciseTracker />
     </div>
   )
 };
 
-const HeaderForm = () => {
-  return (
-    <div className="Header-form">
-      <div className="Head-field">
-        <h1>Add Activity</h1>
-        <p>Activity Type</p>
-      </div>
-    </div>
-  )
-};
+// const HeaderForm = () => {
+//   return (
+//     <div className="Header-form">
+//       <div className="Head-field">
+//         <h1>Add Activity</h1>
+//         <p>Activity Type</p>
+//       </div>
+//     </div>
+//   )
+// };
 
 
 

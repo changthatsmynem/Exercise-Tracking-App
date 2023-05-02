@@ -1,5 +1,13 @@
 @import '../Global.css';
 
+body {
+  background-image: url("https://cdn.discordapp.com/attachments/1082855767092232295/1098828923762135170/background.PNG");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  overflow: hidden;
+}  
+
 .Header-form {
     display: flex;
     flex-direction: column;
