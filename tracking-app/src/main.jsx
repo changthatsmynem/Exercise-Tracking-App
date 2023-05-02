@@ -11,6 +11,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
+
+  {
+    path: "/registcomplete",
+    element: <RegistComplete />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

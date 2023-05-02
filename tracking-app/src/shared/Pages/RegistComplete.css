@@ -1,5 +1,13 @@
 @import '../components/Global.css';
 
+body {
+    background-image: url("https://cdn.discordapp.com/attachments/1082855767092232295/1098828923762135170/background.PNG");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    overflow: hidden;
+  }  
+
 .regist-bg {
     display: block;
     margin-top: 0em;
@@ -9,8 +17,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
-    text-align: center;
-    padding: 100px 100px;
-    background-color: lightgrey;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding: 100px;
+    border-radius: 10px;
+    background-color: #ccc;
+    margin-top: 10rem;
 }
