@@ -6,41 +6,41 @@ import { validate } from "../../validators/validate";
 //style
 import "./InputForm.css";
 
-// const inputReducer = (state, action) => {
-//   switch (action.type) {
-//     case "CHANGE":
-//       return {
-//         ...state,
-//         value: action.value,
-//         isValid: validate(action.value, action.validators),
-//       };
-//     default:
-//       return state;
-//   }
-// };
-
-// const [inputState, dispatch] = useReducer(inputReducer, {
-//   value: "",
-//   isValid: true,
-// });
-
-// const changeHandler = ({ target }) => {
-//   dispatch({
-//     type: "CHANGE",
-//     value: target.value,
-//     validators: props.validators,
-//   });
-// };
+const inputReducer = (state, action) => {
+  switch (action.type) {
+    case "CHANGE":
+      return {
+        ...state,
+        value: action.value,
+        isValid: validate(action.value, action.validators),
+      };
+    default:
+      return state;
+  }
+};
 
 const Input = (props) => {
-  const [inputState, setInputState] = useState({ value: "", isValid: true });
+  const [inputState, dispatch] = useReducer(inputReducer, {
+    value: "",
+    isValid: true,
+  });
 
   const changeHandler = ({ target }) => {
-    const value = target.value;
-    const isValid = validate(value, props.validators);
-
-    setInputState({ value: value, isValid: isValid });
+    dispatch({
+      type: "CHANGE",
+      value: target.value,
+      validators: props.validators,
+    });
   };
+
+  // const [inputState, setInputState] = useState({ value: "", isValid: true });
+
+  // const changeHandler = ({ target }) => {
+  //   const value = target.value;
+  //   const isValid = validate(value, props.validators);
+
+  //   setInputState({ value: value, isValid: isValid });
+  // };
 
   const element =
     props.element === "input" ? (
@@ -50,6 +50,7 @@ const Input = (props) => {
         placeholder={props.placeholder}
         onChange={changeHandler}
         value={inputState.value}
+        required
       />
     ) : (
       <textarea
