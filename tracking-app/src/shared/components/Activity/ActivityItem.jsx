@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import './ActivityItem.css'
+import WALK from "./walk_480.png"
+import RUN from "./running_480.png"
+import SWIM from "./swimming_480.png"
+import HIKING from "./hiking_480.png"
+import BIKE from "./bicycle_480.png"
 
 const ActivityItem = () => {
   const [selectedIcon, setSelectedIcon] = useState("");
@@ -15,7 +20,7 @@ const ActivityItem = () => {
       <div className="icon-list">
       <div className="icon-selector-container">
         <img
-          src="./walk_480.png"
+          src={WALK}
           alt="walk"
           onClick={() => handleIconSelect("walk")}
           style={{
@@ -25,7 +30,7 @@ const ActivityItem = () => {
           }}
         />
         <img
-          src="./running_480.png"
+          src={RUN}
           alt="run"
           onClick={() => handleIconSelect("run")}
           style={{
@@ -35,7 +40,7 @@ const ActivityItem = () => {
           }}
         />
         <img
-          src="https://github.com/changthatsmynem/Exercise-Tracking-App/blob/feature/editact/tracking-app/src/shared/components/icons/swimming_480.png"
+          src={SWIM}
           alt="swim"
           onClick={() => handleIconSelect("swim")}
           style={{
@@ -45,7 +50,7 @@ const ActivityItem = () => {
           }}
         />
         <img
-          src="https://github.com/changthatsmynem/Exercise-Tracking-App/blob/feature/editact/tracking-app/src/shared/components/icons/bicycle_480.png"
+          src={BIKE}
           alt="bike"
           onClick={() => handleIconSelect("bike")}
           style={{
@@ -55,7 +60,7 @@ const ActivityItem = () => {
           }}
         />
         <img
-          src="https://github.com/changthatsmynem/Exercise-Tracking-App/blob/feature/editact/tracking-app/src/shared/components/icons/hiking_480.png"
+          src={HIKING}
           alt="hike"
           onClick={() => handleIconSelect("hike")}
           style={{

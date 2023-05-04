@@ -1,14 +1,32 @@
-@import '../Global.css';
+/* @import '../Global.css'; */
 
 body {
   background-image: url("https://cdn.discordapp.com/attachments/1082855767092232295/1098828923762135170/background.PNG");
   background-size: cover;
   background-position: center;
-  height: 100%;
-  overflow: hidden;
+  height: 50%;
+  /* overflow: hidden; */
 }  
 
-.Header-form {
+.AddAct-bg {
+    display: block;
+    margin-top: 0em;
+}
+
+.AddAct-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding: 100px;
+    border-radius: 10px;
+    background-color: y;
+    margin-top: 10rem;
+}
+/* .Header-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,4 +43,4 @@ body {
     flex-direction: column;
     margin: 10px 0;
     width: 100%;
-  }
+  } */
