@@ -1,1 +1,11 @@
 @import '../components/Global.css';
+
+.dashboard-box-overall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-box-overall h1 {
+    font-family: var(--nunito-font);
+}

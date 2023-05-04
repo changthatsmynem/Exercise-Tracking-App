@@ -44,6 +44,18 @@
     transform: translateY(0);
 }
 
+.button--inverse {
+    outline: solid var(--green);
+    backdrop-filter: blur(100px);
+    background-color: white;
+    color: black;
+}
+
+.button--inverse:hover, .button--inverse:active {
+    color: white;
+    background: var(--yellow);
+}
+
 .button--danger {
     background-color: var(--red);
 }
@@ -57,6 +69,10 @@
 
 .button--small {
     font-size: 0.8rem;
+}
+
+.button--medium {
+    font-size: 1rem;
 }
 
 .button--large {

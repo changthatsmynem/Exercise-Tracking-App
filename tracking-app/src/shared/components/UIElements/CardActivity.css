@@ -1,2 +1,19 @@
 @import '../Global.css';
 
+.activity-card__layout {
+    place-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.activity-card__header {
+    padding: 0.15rem;
+}
+
+.card-activity-btn {
+    padding: 1rem;
+}

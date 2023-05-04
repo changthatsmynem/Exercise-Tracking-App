@@ -58,6 +58,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem 0;
+}
+
+.signup-login-form-btn {
+    padding: 1.15rem 2.2rem;
 }
 
 @media (max-width: 768px) {

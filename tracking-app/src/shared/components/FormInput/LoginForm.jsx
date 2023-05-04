@@ -47,7 +47,12 @@ const LoginForm = () => {
               </h5>
             </div>
             <div className="button-div-login">
-              <Button to={"/register"} type={"button"}>
+              <Button
+                inverse
+                to={"/register"}
+                type={"button"}
+                className="signup-login-form-btn"
+              >
                 Sign up
               </Button>
               <Button type={"submit"}>Login</Button>

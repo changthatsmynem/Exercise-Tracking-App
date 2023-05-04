@@ -14,6 +14,7 @@
     display: flex;
     align-items:center ;
     justify-content: center;
+    font-family: var(--inter-font);
     height: 100vh ;
     background:url(../BackgroundImg/background.PNG);
     background-size: cover;
@@ -28,8 +29,9 @@
     border-radius: 20px;
     margin-top: 62px;
     background: transparent;
-    box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);; 
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(100px);
+    /* overflow-y: hidden; */
 }
 
 
@@ -46,6 +48,7 @@
 }   
 
 .register-input{
+    background-color: #d2d2d2;
     width: 100%;
     height: 45px;
     border-radius: 10px;
@@ -68,21 +71,35 @@
 .div-submit-btn{
     display: flex;
     justify-content: center;
-    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0;
 }
 
 .submit-registration-btn{
     font-size: 20px;
     font-weight: 700;
-    width: 40%;
+    color: white;
+    width: 60%;
     height:45px;
-    cursor: pointer;
     border-radius: 10px;
-    background-color: var(--yellow);
+    background-color: var(--green);
+    text-align: center;
     border: none;
-    place-content: center;
     margin-left: 15px;
     margin-bottom: 5px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.submit-registration-btn:hover {
+    background-color: var(--yellow);
+    color: var(--green);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
 }
 
 .error-registration-message{
@@ -94,17 +111,17 @@
     font-size: 12px;
 }
 
-.register-input:valid{
+.register-input:valid[focused='true']{
     background-color: rgb(174, 247, 222);
 
 }
 
-.register-input:invalid{
+.register-input:invalid[focused='true']{
     background-color: rgb(255, 208, 230);
     border-color: red;
 }
 
-.register-input:invalid~.error-registration-message {
+.register-input:invalid[focused='true']~.error-registration-message {
     display: block;
 }
 
@@ -113,8 +130,19 @@
     font-size: 20px;
 }
 
-.signIn-InRegistration-link{
-    color: #0057FF;
+.signIn-InRegistration-link {
+    color: blue;
+    text-decoration: none;
+    margin: 0 0.3rem 0 0.3rem;
+}
+
+.signIn-InRegistration-link:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+.signIn-InRegistration-link:hover {
+    text-decoration: underline;
 }
 
 
@@ -177,20 +205,32 @@
         font-weight: 700;
         color: rgb(122, 121, 121);
     }
-    
-    .submit-registration-btn{
-        font-size: 20px;
-        font-weight: 700;
-        width: 60%;
-        height:45px;
-        cursor: pointer;
-        border-radius: 10px;
-        background-color: var(--yellow);
-        border: none;
-        margin-left: 4px;
-        margin-bottom: 5px;
-        
-    }
+
+   .submit-registration-btn {
+       font-size: 20px;
+       font-weight: 700;
+       color: white;
+       width: 60%;
+       height: 45px;
+       border-radius: 10px;
+       background-color: var(--green);
+       text-align: center;
+       border: none;
+       margin-left: 4px;
+       margin-bottom: 5px;
+       transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+       user-select: none;
+       -webkit-user-select: none;
+       touch-action: manipulation;
+       will-change: transform;
+   }
+
+   .submit-registration-btn:hover {
+       background-color: var(--yellow);
+       color: var(--green);
+       box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+       transform: translateY(-2px);
+   }
     
     .div-submit-btn{
         display: flex;
@@ -209,7 +249,7 @@
         display: flex;
         align-items:center ;
         justify-content: center;
-        height: 141vh ;
+        height: 100vh ;
         background:url(../BackgroundImg/background.PNG);
         background-size: cover;
         width: 100vw;
@@ -219,7 +259,7 @@
         background-color: #d2d2d2;
         padding: 24px 9px;
         width: 600px;
-        height: 727px;
+        height: 700px;
         border-radius: 20px;
         margin-top: 62px;
         background: transparent;
@@ -255,20 +295,32 @@
         font-weight: 700;
         color: rgb(122, 121, 121);
     }
-    
-    .submit-registration-btn{
-        font-size: 20px;
-        font-weight: 700;
-        width: 60%;
-        height:45px;
-        cursor: pointer;
-        border-radius: 10px;
-        background-color: var(--yellow);
-        border: none;
-        margin-left: 4px;
-        margin-bottom: 5px;
-        
-    }
+
+   .submit-registration-btn {
+       font-size: 20px;
+       font-weight: 700;
+       color: white;
+       width: 60%;
+       height: 45px;
+       border-radius: 10px;
+       background-color: var(--green);
+       text-align: center;
+       border: none;
+       margin-left: 4px;
+       margin-bottom: 5px;
+       transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+       user-select: none;
+       -webkit-user-select: none;
+       touch-action: manipulation;
+       will-change: transform;
+   }
+
+   .submit-registration-btn:hover {
+       background-color: var(--yellow);
+       color: var(--green);
+       box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+       transform: translateY(-2px);
+   }
     
     .div-submit-btn{
         display: flex;
@@ -297,7 +349,7 @@
         background-color: #d2d2d2;
         padding: 24px 9px;
         width: 750px;
-        height: 1062px;
+        height: 750px;
         border-radius: 20px;
         margin-top: 62px;
         background: transparent;
@@ -337,20 +389,32 @@
         font-weight: 700;
         color: rgb(122, 121, 121);
     }
-    
-    .submit-registration-btn{
-        font-size: 30px;
-        font-weight: 700;
-        width: 60%;
-        height:45px;
-        cursor: pointer;
-        border-radius: 10px;
-        background-color: var(--yellow);
-        border: none;
-        margin-left: 4px;
-        margin-bottom: 5px;
-        
-    }
+
+   .submit-registration-btn {
+       font-size: 20px;
+       font-weight: 700;
+       color: white;
+       width: 60%;
+       height: 45px;
+       border-radius: 10px;
+       background-color: var(--green);
+       text-align: center;
+       border: none;
+       margin-left: 4px;
+       margin-bottom: 5px;
+       transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+       user-select: none;
+       -webkit-user-select: none;
+       touch-action: manipulation;
+       will-change: transform;
+   }
+
+   .submit-registration-btn:hover {
+       background-color: var(--yellow);
+       color: var(--green);
+       box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+       transform: translateY(-2px);
+   }
     
     .div-submit-btn{
         display: flex;
@@ -415,20 +479,32 @@
         font-weight: 700;
         color: rgb(122, 121, 121);
     }
-    
-    .submit-registration-btn{
-        font-size: 20px;
-        font-weight: 700;
-        width: 60%;
-        height:45px;
-        cursor: pointer;
-        border-radius: 10px;
-        background-color: var(--yellow);
-        border: none;
-        margin-left: 4px;
-        margin-bottom: 5px;
-        
-    }
+
+   .submit-registration-btn {
+       font-size: 20px;
+       font-weight: 700;
+       color: white;
+       width: 60%;
+       height: 45px;
+       border-radius: 10px;
+       background-color: var(--green);
+       text-align: center;
+       border: none;
+       margin-left: 4px;
+       margin-bottom: 5px;
+       transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+       user-select: none;
+       -webkit-user-select: none;
+       touch-action: manipulation;
+       will-change: transform;
+   }
+
+   .submit-registration-btn:hover {
+       background-color: var(--yellow);
+       color: var(--green);
+       box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+       transform: translateY(-2px);
+   }
     
     .div-submit-btn{
         display: flex;
@@ -493,20 +569,32 @@
         font-weight: 700;
         color: rgb(122, 121, 121);
     }
-    
-    .submit-registration-btn{
-        font-size: 20px;
-        font-weight: 700;
-        width: 60%;
-        height:45px;
-        cursor: pointer;
-        border-radius: 10px;
-        background-color: var(--yellow);
-        border: none;
-        margin-left: 4px;
-        margin-bottom: 5px;
-        
-    }
+
+   .submit-registration-btn {
+       font-size: 20px;
+       font-weight: 700;
+       color: white;
+       width: 60%;
+       height: 45px;
+       border-radius: 10px;
+       background-color: var(--green);
+       text-align: center;
+       border: none;
+       margin-left: 4px;
+       margin-bottom: 5px;
+       transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+       user-select: none;
+       -webkit-user-select: none;
+       touch-action: manipulation;
+       will-change: transform;
+   }
+
+   .submit-registration-btn:hover {
+       background-color: var(--yellow);
+       color: var(--green);
+       box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+       transform: translateY(-2px);
+   }
     
     .div-submit-btn{
         display: flex;
@@ -571,20 +659,33 @@
         font-weight: 700;
         color: rgb(122, 121, 121);
     }
-    
-    .submit-registration-btn{
-        font-size: 20px;
-        font-weight: 700;
-        width: 60%;
-        height:45px;
-        cursor: pointer;
-        border-radius: 10px;
-        background-color: var(--yellow);
-        border: none;
-        margin-left: 4px;
-        margin-bottom: 5px;
-        
-    }
+
+
+   .submit-registration-btn {
+       font-size: 20px;
+       font-weight: 700;
+       color: white;
+       width: 60%;
+       height: 45px;
+       border-radius: 10px;
+       background-color: var(--green);
+       text-align: center;
+       border: none;
+       margin-left: 4px;
+       margin-bottom: 5px;
+       transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+       user-select: none;
+       -webkit-user-select: none;
+       touch-action: manipulation;
+       will-change: transform;
+   }
+
+   .submit-registration-btn:hover {
+       background-color: var(--yellow);
+       color: var(--green);
+       box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+       transform: translateY(-2px);
+   }
     
     .register-label {
         font-size: 20px;
