@@ -138,15 +138,14 @@ const ExerciseTracker = () => {
   };
 
   return (
-    <div
-    className="form-container">
-      <h1>Exercise Tracker</h1>
+    <div>
       <form onSubmit={handleTrackerSubmit}
       className="form-container">
+        <h1>Exercise Tracker</h1>
         <ExerciseForm />
         <ActivityForm />
         <button type="submit"
-        className="form-field button">
+        className="button">
         Add
         </button>
       </form>
