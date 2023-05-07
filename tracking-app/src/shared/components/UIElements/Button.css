@@ -15,7 +15,7 @@
     min-height: 2.75rem;
     min-width: 0;
     outline: none;
-    padding: 1em 2.3em;
+    padding: 1em 2em;
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -45,7 +45,7 @@
 }
 
 .button--inverse {
-    outline: solid var(--green);
+    border: solid var(--green);
     backdrop-filter: blur(100px);
     background-color: white;
     color: black;
@@ -77,4 +77,4 @@
 
 .button--large {
     font-size: 1.5rem;
-}   
+}

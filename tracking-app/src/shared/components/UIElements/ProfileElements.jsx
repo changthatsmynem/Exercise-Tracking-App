@@ -1,6 +1,6 @@
 import "./ProfileElements.css";
 
-const ProfileElements = () => {
+const ProfileElements = (props) => {
   return (
     <div
       className={`profile-card__dashboard ${props.className}`}

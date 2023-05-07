@@ -19,21 +19,19 @@ const ActivityList = (props) => {
   }
 
   return (
-    <div className="activity-list__box">
-      <ul className="activity-list-item">
-        {props.items.map((item) => (
-          <CardActivity
-            key={item.id}
-            id={item.id}
-            header={item.header}
-            activity={item.activity}
-            descriptions={item.descriptions}
-            startTime={item.startTime}
-            endTime={item.endTime}
-          />
-        ))}
-      </ul>
-    </div>
+    <ul className="activity-list-item">
+      {props.items.map((item) => (
+        <CardActivity
+          key={item.id}
+          id={item.id}
+          header={item.header}
+          activity={item.activity}
+          descriptions={item.descriptions}
+          startTime={item.startTime}
+          endTime={item.endTime}
+        />
+      ))}
+    </ul>
   );
 };
 

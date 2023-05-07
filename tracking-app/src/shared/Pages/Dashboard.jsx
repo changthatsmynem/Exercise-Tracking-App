@@ -5,6 +5,10 @@ import MainNav from "../components/Navbar/MainNav";
 import ActivityList from "../components/UIElements/ActivityList";
 import Button from "../components/UIElements/Button";
 import Background from "../components/UIElements/Background";
+import ProfileElements from "../components/UIElements/ProfileElements";
+
+//style
+import "./Dashboard.css";
 
 //icons
 import DirectionsWalkIcon from "@mui/icons-material/DirectionsWalk";
@@ -62,12 +66,21 @@ const Dashboard = (props) => {
     <>
       <MainNav />
       <Background>
-        <div className="dashboard-box-overall">
-          <h1>Your Dashboard</h1>
-          <ActivityList items={DUMMY} />
-          <Button size="medium" to="/addActivity">
-            Add Activity
-          </Button>
+        <div className="db-pages">
+          <div className="left-dashb-container">
+            <ProfileElements />
+          </div>
+          <div className="right-dashb-container">
+            <div className="header-right-section-dashb">
+              <div className="dash-word-header">
+                <h1>Your Dashboard</h1>
+              </div>
+              <Button size="medium" to="/addActivity" className="add-btn-dashb">
+                Add Activity
+              </Button>
+            </div>
+            <ActivityList items={DUMMY} />
+          </div>
         </div>
       </Background>
     </>

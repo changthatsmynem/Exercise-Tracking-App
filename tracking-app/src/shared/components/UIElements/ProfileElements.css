@@ -1,5 +1,10 @@
 @import '../Global.css';
 
 .profile-card__dashboard {
-    display: grid;
+    display: flex;
+}
+
+.profile-card__dashboard img {
+    border-radius: 50%;
+    
 }

@@ -4,8 +4,68 @@
     position: relative;
     place-content: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    border-radius: 2rem;
-    padding: 3rem;
+    border-radius: 32px;
+    padding: 48px;
     overflow: hidden;
     background: #D2D2D2;
+}
+
+.card-layout-default {
+    place-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    background: transparent;
+    backdrop-filter: blur(100%);
+    margin: 20px;
+    padding: 20px;
+    font-family: var(--nunito-font);
+}
+
+.card-layout-success {
+    position: relative;
+    place-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    background: #4BB543;
+    backdrop-filter: blur(70%);
+    margin: 20px;
+    padding: 20px;
+    font-family: var(--nunito-font);
+}
+
+.card-layout-stop {
+    position: relative;
+    place-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    background: #a09c9c;
+    backdrop-filter: blur(70%);
+    margin: 20px;
+    padding: 20px;
+    font-family: var(--nunito-font);
+}
+
+@media (max-width: 768px) {
+
+    .card-layout {
+        width: 100%;
+    }
+
+    .card-layout-default {
+        width: 100%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .card-layout-success {
+        width: 100%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .card-layout-stop {
+        width: 100%;
+        margin: 20px;
+        padding: 20px;
+    }
 }
