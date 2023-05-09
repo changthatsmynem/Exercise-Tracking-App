@@ -4,7 +4,8 @@
     display: flex;
 }
 
-.profile-card__dashboard img {
+.profile-image-container {
     border-radius: 50%;
-    
+    border: solid 3px black;
+    object-fit: cover;
 }

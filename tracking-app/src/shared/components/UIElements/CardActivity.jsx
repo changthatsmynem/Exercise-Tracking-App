@@ -17,10 +17,10 @@ const CardActivity = (props) => {
       <div className="activity-type__card">{props.activity}</div>
       <div className="time-input__card">
         <p>
-          <b>Start:</b> {props.startTime}
+          <b>Start Date:</b> {props.startDate}
         </p>
         <p>
-          <b>End:</b> {props.endTime}
+          <b>End Date:</b> {props.endDate}
         </p>
       </div>
       <div className="activity-description-box">

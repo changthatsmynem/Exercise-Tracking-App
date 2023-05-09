@@ -15,7 +15,7 @@
     align-items:center ;
     justify-content: center;
     font-family: var(--inter-font);
-    height: 100vh ;
+    height: 100vh;
     background:url(../BackgroundImg/background.PNG);
     background-size: cover;
     width: 100%;
@@ -24,14 +24,17 @@
 .registration-form-section{
     background-color: #d2d2d2;
     padding: 24px 20px;
-    width: 750px;
-    height: 609px;
+    width: 60%;
+    height: 80%;
     border-radius: 20px;
     margin-top: 62px;
     background: transparent;
     box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(100px);
-    /* overflow-y: hidden; */
+}
+
+.registration-form-section h1 {
+    margin: 20px auto;
 }
 
 

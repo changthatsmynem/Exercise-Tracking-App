@@ -10,29 +10,25 @@ const LandingPage = () => {
     <>
       <div className="landing_page-container">
         <div className="first-section-container">
-          <div className="row flex-lg-row align-items-center pt-5 main1">
-            <div className="col-lg-5 main1Right">
-              <h1 className="display-5 fw-bold lh-1 mb-3">STAY ACTIVE</h1>
-              <h1 className="display-5 fw-bold lh-1 mb-3">STAY INDEPENDENT</h1>
-              <h1 className="display-5 fw-bold lh-1 mb-3">AND EVERLASTING</h1>
-              <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                <button
-                  type="button"
-                  className="get-started-button"
-                >
+          <div className="main-top-container">
+            <div className="main1-left">
+              <h1 className="firstline-slogan">STAY ACTIVE</h1>
+              <h1 className="secondline-slogan">STAY INDEPENDENT</h1>
+              <h1 className="thirdline-slogan">AND EVERLASTING</h1>
+              <div className="get-started-btn-container">
+                <button type="button" className="get-started-button">
                   Get Started
                 </button>
               </div>
             </div>
-            <div className="col-lg-1 main1Right"></div>
-            <div className="col-lg-6 main1Left">
+            <div className="main1-right">
               <h1
-                className="display-5 fw-bold lh-1 mb-1"
+                className="header-main-right"
                 style={{ color: "#066c6b" }}
               >
                 Why Us?
               </h1>
-              <p className="lead-content">
+              <p className="main-right-text">
                 FEELING TIRED TO START WORKING OUT??
                 <br />
                 FEELING LIKE IT'S TOO LATE??
@@ -55,22 +51,20 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="container col-xxl-8 px-4 py-5">
-          <div className="row flex-lg-row align-items-center g-5 py-5">
-            <div className="col-10 col-lg-6 d-none d-md-block main2Left">
+        <div className="second-section-container">
+          <div className="main-middle-container">
+            <div className="main2-left">
               <img
                 src={AppDemo}
                 style={{ width: "75%" }}
-                className="d-block mx-lg-auto img-fluid card-img"
+                className="app-demo-101"
                 alt="App Demo"
-                width="700"
-                height="500"
                 loading="lazy"
               />
             </div>
-            <div className="col-lg-6 main2Right">
-              <h1 className="display-5 fw-bold lh-1 mb-1">OUR FEATURES</h1>
-              <p className="lead">
+            <div className="main2-right">
+              <h1 className="main2-right-header">OUR FEATURES</h1>
+              <p className="main2-right-text">
                 JOIN US TODAY AND START WORKING OUT TO GET THE PRIZE LIMITED
                 TIME “HELLO MONDAY” POSTCARD FOR FREE!!!
               </p>
@@ -81,9 +75,9 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        <div className="container px-4 py-5" id="custom-cards">
-          <div className="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-            <div className="col">
+        <div className="five-cards-container" id="custom-cards">
+          <div className="grid-layer-five-cards">
+            <div className="col-five-1">
               <div className="card bg-dark text-white">
                 <img
                   className="card-img"
@@ -101,7 +95,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-five-2">
               <div className="card bg-dark text-white">
                 <img
                   className="card-img"
@@ -119,7 +113,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-five-3">
               <div className="card bg-dark text-white">
                 <img
                   className="card-img"
@@ -137,7 +131,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-five-4">
               <div className="card bg-dark text-white">
                 <img
                   className="card-img"
@@ -155,7 +149,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col-five-5">
               <div className="card bg-dark text-white">
                 <img
                   className="card-img"
