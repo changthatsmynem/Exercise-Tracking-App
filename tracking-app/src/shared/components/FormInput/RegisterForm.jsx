@@ -1,7 +1,9 @@
 import { useState } from "react";
 
+//component
 import RegisterInputForm from "./RegisterInputForm";
 import MainNav from "../Navbar/MainNav";
+import Background from "../UIElements/Background";
 
 import "./RegisterForm.css";
 
@@ -80,34 +82,36 @@ const RegisterForm = () => {
   };
 
   return (
-    <div className="registration-page">
-      <div className="edit-nav-registration">
-        <MainNav />
-      </div>
-      <div className="register-form">
-        <form className="registration-form-section" onSubmit={handleSubmit}>
-          <h1 className="header-registration-word">Registration</h1>
-          {input.map((input) => (
-            <RegisterInputForm
-              key={input.id}
-              {...input}
-              value={values[input.name]}
-              onChange={onChange}
-            />
-          ))}
-          <div className="div-submit-btn">
-            <button className="submit-registration-btn">SUBMIT</button>
+    <>
+      <MainNav />
+      <Background>
+        <div className="registration-page">
+          <div className="register-form">
+            <form className="registration-form-section" onSubmit={handleSubmit}>
+              <h1 className="header-registration-word">Registration</h1>
+              {input.map((input) => (
+                <RegisterInputForm
+                  key={input.id}
+                  {...input}
+                  value={values[input.name]}
+                  onChange={onChange}
+                />
+              ))}
+              <div className="div-submit-btn">
+                <button className="submit-registration-btn">SUBMIT</button>
+              </div>
+              <h1 className="last-sentence">
+                Already has an account?
+                <a href="/login" className="signIn-InRegistration-link">
+                  Sign in
+                </a>
+                here!
+              </h1>
+            </form>
           </div>
-          <h1 className="last-sentence">
-            Already has an account?
-            <a href="/login" className="signIn-InRegistration-link">
-              Sign in
-            </a>
-            here!
-          </h1>
-        </form>
-      </div>
-    </div>
+        </div>
+      </Background>
+    </>
   );
 };
 

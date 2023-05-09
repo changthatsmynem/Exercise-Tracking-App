@@ -6,18 +6,12 @@
     justify-content: center;
 }
 
-.edit-nav-registration{
-    padding-bottom: 10px;
-}
-
 .register-form{
     display: flex;
     align-items:center ;
     justify-content: center;
     font-family: var(--inter-font);
     height: 100vh;
-    background:url(../BackgroundImg/background.PNG);
-    background-size: cover;
     width: 100%;
 }
 
@@ -25,7 +19,7 @@
     background-color: #d2d2d2;
     padding: 24px 20px;
     width: 60%;
-    height: 80%;
+    height: auto;
     border-radius: 20px;
     margin-top: 62px;
     background: transparent;

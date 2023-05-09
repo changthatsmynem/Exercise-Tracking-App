@@ -1,6 +1,9 @@
 @import '../Global.css';
 
 .button-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     appearance: none;
     background-color: var(--green);
     border: none;

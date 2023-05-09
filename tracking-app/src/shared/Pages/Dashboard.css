@@ -7,6 +7,7 @@
 }
 
 .left-dashb-container {
+    position: sticky;
     width: 30%;
     min-width: 300px;
     background-color: #f0f0f0;
@@ -18,11 +19,12 @@
     margin-top: 92.8px;
     margin-right: 2rem;
     margin-bottom: 1.5rem;
-    max-height: calc(100vh - 32px);
+    height: auto;
     background: transparent;
     backdrop-filter: blur(100px);
     border-radius: 32px;
     border: solid 2px black;
+    overflow: hidden;
 }
 
 .right-dashb-container::-webkit-scrollbar {
