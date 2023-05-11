@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-//components
 import App from "./App";
 import LoginForm from "./shared/components/FormInput/LoginForm";
 import RegisterForm from "./shared/components/FormInput/RegisterForm";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AddActivity from "./shared/Pages/AddActivity.jsx";
+import RegistComplete from "./shared/Pages/RegistComplete.jsx";
+
 
 const router = createBrowserRouter([
   {
@@ -15,13 +15,13 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/registcomplete",
-    element: <RegistComplete />,
+    path: "/AddActivity",
+    element: <AddActivity />,
   },
 
   {
-    path: "/login",
-    element: <LoginForm />,
+    path: "/RegistComplete",
+    element: <RegistComplete />,
   },
   {
     path: "/register",

@@ -1,17 +1,19 @@
 import { useState } from "react";
 import MainNav from "../components/Navbar/MainNav";
+import ActivityItem from "../components/Activity/ActivityItem.jsx"
+import ExerciseTracker from "../components/Activity/ExerciseTracker";
+import "./AddActivity.css";
 
 const AddActivity = () => {
-
-
   return (
     <div>
-      <div>
+      <div className="AddAct-bg">
         <MainNav/>
       </div>
 
-      <div className="activity-formcard">
-        <FormCard/>
+      <div className="AddAct-container">
+        <ActivityItem />
+        <ExerciseTracker />
       </div>
       
     </div>
@@ -19,37 +21,6 @@ const AddActivity = () => {
   )
 };
 
-const FormCard = () => {
 
-  return (
-    <div>
-      <HeaderForm />
-      <ActivityChoices />
-      <FormActInput />
-    </div>
-  )
-};
-
-const HeaderForm = () => {
-  return (
-    <div className="Header-form">
-      <h1>Add Activity</h1>
-      <p>Activity Type</p>
-    </div>
-  )
-};
-
-const ActivityChoices = () => {
-// const [selectActivity, SetSelectActivity] = useState(null);
-  return (
-    <div className="activity-choices">
-      {/* <ActivityItem/> */}
-    </div>
-  )
-};
-
-const FormActInput = () => {
-
-};
 
 export default AddActivity;
