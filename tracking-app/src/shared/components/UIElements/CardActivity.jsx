@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import ModeRoundedIcon from "@mui/icons-material/ModeRounded";
 import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
 
@@ -11,8 +11,22 @@ import Button from "./Button";
 import "./CardActivity.css";
 
 const CardActivity = (props) => {
+  const [layout, setLayout] = useState("default");
+
+  const layoutSuccessHandler = () => {
+    if (layout === "default") {
+      setLayout("success");
+    }
+  };
+
+  const layoutCancelHandler = () => {
+    if (layout === "default") {
+      setLayout("cancel");
+    }
+  };
+
   return (
-    <Layout default>
+    <Layout default={layout} className="card-hover-effect">
       <h3 className="activity-card__header">{props.header}</h3>
       <div className="activity-type__card">{props.activity}</div>
       <div className="time-input__card">
@@ -23,16 +37,32 @@ const CardActivity = (props) => {
           <b>End Date:</b> {props.endDate}
         </p>
       </div>
+      <div className="">
+        <p>{props.duration}</p>
+      </div>
       <div className="activity-description-box">
         <p>{props.descriptions}</p>
       </div>
       <div className="card-activity-btn">
-        <Button size="small" className="finish-btn-card-activity">
-          Finish
-        </Button>
-        <Button danger size="small" className="stop-btn-card-activity">
-          Stop
-        </Button>
+        {layout === "default" && (
+          <>
+            <Button
+              size="small"
+              className="finish-btn-card-activity"
+              onClick={layoutSuccessHandler}
+            >
+              Finish
+            </Button>
+            <Button
+              danger
+              size="small"
+              className="stop-btn-card-activity"
+              onClick={layoutCancelHandler}
+            >
+              Cancel
+            </Button>
+          </>
+        )}
       </div>
       <div className="control-card-activity-btn">
         <button className="edit-btn-card-act">
