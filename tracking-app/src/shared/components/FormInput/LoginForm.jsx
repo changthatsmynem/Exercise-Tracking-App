@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 //form validate
-import { VALIDATE_EMAIL, VALIDATE_MINLENGTH } from "../../validators/validate";
+import { VALIDATE_EMAIL, VALIDATE_PASSWORD } from "../../validators/validate";
 
 //components
 import Layout from "../UIElements/Layout";
@@ -36,19 +36,19 @@ const LoginForm = () => {
               id="password"
               type="password"
               label="Password"
-              errorText="Your password needs at least 6 characters"
-              validators={[VALIDATE_MINLENGTH(6)]}
+              errorText="Your password should includes at least 1 Lowercase, 1 Uppercase and 1 number with at least 6 characters"
+              validators={[VALIDATE_PASSWORD()]}
             />
             <div className="checkbox-remember">
               <input type="checkbox" name="checkbox" id="checkbox" />
               <h6 style={{ fontWeight: "400" }}>Remember Me</h6>
               <h5>
-                <a href="">Forgot Password?</a>
+                <a href="/register">Forgot Password?</a>
               </h5>
             </div>
             <div className="button-div-login">
               <Button to={"/register"} type={"button"}>
-                Signup
+                Sign up
               </Button>
               <Button type={"submit"}>Login</Button>
             </div>

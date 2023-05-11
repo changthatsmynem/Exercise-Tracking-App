@@ -17,6 +17,10 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 70%;
+    text-align: center;
+    padding: 100px 100px;
+    background-color: lightgrey;
     align-items: center;
     margin: 50px auto;
     max-width: 600px;

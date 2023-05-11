@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-//components
 import App from "./App";
-
+import LoginForm from "./shared/components/FormInput/LoginForm";
+import RegisterForm from "./shared/components/FormInput/RegisterForm";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AddActivity from "./shared/Pages/AddActivity.jsx";
 import RegistComplete from "./shared/Pages/RegistComplete.jsx";
@@ -23,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/RegistComplete",
     element: <RegistComplete />,
+  },
+  {
+    path: "/register",
+    element: <RegisterForm />,
   },
 ]);
 
