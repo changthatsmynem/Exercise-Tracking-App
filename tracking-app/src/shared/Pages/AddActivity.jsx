@@ -5,19 +5,21 @@ import ExerciseTracker from "../components/Activity/ExerciseTracker";
 import "./AddActivity.css";
 
 const AddActivity = () => {
-  return <div>Add Activity</div>;
-};
+  return (
+    <div>
+      <div className="AddAct-bg">
+        <MainNav/>
+      </div>
 
-// const HeaderForm = () => {
-//   return (
-//     <div className="Header-form">
-//       <div className="Head-field">
-//         <h1>Add Activity</h1>
-//         <p>Activity Type</p>
-//       </div>
-//     </div>
-//   )
-// };
+      <div className="AddAct-container">
+        <ActivityItem />
+        <ExerciseTracker />
+      </div>
+      
+    </div>
+  
+  )
+};
 
 
 

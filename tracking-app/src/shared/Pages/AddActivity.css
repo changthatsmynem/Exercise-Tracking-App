@@ -4,8 +4,8 @@ body {
   background-image: url("https://cdn.discordapp.com/attachments/1082855767092232295/1098828923762135170/background.PNG");
   background-size: cover;
   background-position: center;
-  height: 50%;
-  /* overflow: hidden; */
+  height: 100%;
+  overflow: hidden;
 }  
 
 .AddAct-bg {
@@ -21,11 +21,18 @@ body {
     margin: 50px auto;
     max-width: 600px;
     border: 1px solid #ccc;
-    padding: 100px;
+    padding: 50px;
     border-radius: 10px;
     background-color: y;
     margin-top: 10rem;
 }
+
+
+
+
+
+
+
 /* .Header-form {
     display: flex;
     flex-direction: column;

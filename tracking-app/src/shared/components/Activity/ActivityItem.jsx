@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import './ActivityItem.css'
-import WALK from "./walk_480.png"
-import RUN from "./running_480.png"
-import SWIM from "./swimming_480.png"
-import HIKING from "./hiking_480.png"
-import BIKE from "./bicycle_480.png"
+import WALK from "../../../assets/images/walk_480.png";
+import RUN from "../../../assets/images/running_480.png";
+import SWIM from "../../../assets/images/swimming_480.png";
+import HIKING from "../../../assets/images/hiking_480.png";
+import BIKE from "../../../assets/images/bicycle_480.png";
 
 const ActivityItem = () => {
   const [selectedIcon, setSelectedIcon] = useState("");
