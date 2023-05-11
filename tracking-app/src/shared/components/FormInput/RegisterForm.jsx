@@ -1,7 +1,11 @@
-import RegisterInputForm from "./RegisterInputForm";
-import "./RegisterForm.css";
 import { useState } from "react";
+
+//component
+import RegisterInputForm from "./RegisterInputForm";
 import MainNav from "../Navbar/MainNav";
+import Background from "../UIElements/Background";
+
+import "./RegisterForm.css";
 
 const RegisterForm = () => {
   const [values, setValues] = useState({
@@ -22,6 +26,7 @@ const RegisterForm = () => {
         "First name should be English at least 3 letters and not contain any spacial characters.",
       label: "Firstname",
       pattern: "^[A-Za-z0-9 ]{3,30}$",
+      required: true,
     },
     {
       id: 2,
@@ -32,6 +37,7 @@ const RegisterForm = () => {
         "Last name should be English at least 3 letters and not contain any spacial characters.",
       label: "Lastname",
       pattern: "^[A-Za-z0-9 ]{3,30}$",
+      required: true,
     },
     {
       id: 3,
@@ -42,6 +48,7 @@ const RegisterForm = () => {
         "Email should be valid , *This app is support only @gmail and @hotmail only*",
       label: "Email",
       pattern: "^[A-Za-z0-9]+@[gmailhotmail]+\\.(com|co\\.th|net)$",
+      required: true,
     },
     {
       id: 4,
@@ -52,6 +59,7 @@ const RegisterForm = () => {
         "Password should have 6-20 characters and include at least 1 Lowercase, 1 Uppercase and 1 number.",
       label: "Password",
       pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])[a-zA-Z0-9]{6,20}$`,
+      required: true,
     },
     {
       id: 5,
@@ -61,7 +69,7 @@ const RegisterForm = () => {
       errorMessage: "Password doesn't match.",
       label: "Confirm password",
       pattern: values.password,
-      //จริงๆต้องใช้คำสั่ง required แต่เเก้ยังไงก็ไม่ได้เลย ลบทิ้ง
+      required: true,
     },
   ];
 
@@ -73,37 +81,37 @@ const RegisterForm = () => {
     setValues({ ...values, [event.target.name]: event.target.value });
   };
 
-  console.log(values);
-
   return (
-    <div className="registration-page">
-      <div className="edit-nav-registration">
-        <MainNav />
-      </div>
-      <div className="register-form">
-        <form className="registration-form-section" onSubmit={handleSubmit}>
-          <h1 className="header-registration-word">Registration</h1>
-          {input.map((input) => (
-            <RegisterInputForm
-              key={input.id}
-              {...input}
-              value={values[input.name]}
-              onChange={onChange}
-            />
-          ))}
-          <div className="div-submit-btn">
-            <button className="submit-registration-btn">Submit</button>
+    <>
+      <MainNav />
+      <Background>
+        <div className="registration-page">
+          <div className="register-form">
+            <form className="registration-form-section" onSubmit={handleSubmit}>
+              <h1 className="header-registration-word">Registration</h1>
+              {input.map((input) => (
+                <RegisterInputForm
+                  key={input.id}
+                  {...input}
+                  value={values[input.name]}
+                  onChange={onChange}
+                />
+              ))}
+              <div className="div-submit-btn">
+                <button className="submit-registration-btn">SUBMIT</button>
+              </div>
+              <h1 className="last-sentence">
+                Already has an account?
+                <a href="/login" className="signIn-InRegistration-link">
+                  Sign in
+                </a>
+                here!
+              </h1>
+            </form>
           </div>
-          <h1 className="last-sentence">
-            Already has an account?{" "}
-            <a href="/login" className="signIn-InRegistration-link">
-              Sign in
-            </a>{" "}
-            here!
-          </h1>
-        </form>
-      </div>
-    </div>
+        </div>
+      </Background>
+    </>
   );
 };
 

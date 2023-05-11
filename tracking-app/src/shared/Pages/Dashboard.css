@@ -1,1 +1,114 @@
 @import '../components/Global.css';
+
+.db-pages {
+    display: flex;
+    overflow-y: auto;
+    min-height: 100vh;
+}
+
+.left-dashb-container {
+    position: fixed;
+    float: left;
+    width: 30%;
+    height: 80vh;
+    min-width: 300px;
+    background-color: #f0f0f0;
+    padding: 16px;
+    margin: 100px 20px 30px;
+}
+
+.right-dashb-container {
+    float: right;
+    margin-top: 92.8px;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+    margin-left: 30rem;
+    height: auto;
+    background: transparent;
+    backdrop-filter: blur(100px);
+    border-radius: 32px;
+    border: solid 2px black;
+    overflow: hidden;
+}
+
+.right-dashb-container::-webkit-scrollbar {
+    display: none;
+}
+
+.header-right-section-dashb {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px auto;
+    margin: 15px 10px 5px 15px;
+}
+
+.dash-word-header {
+    font-family: var(--inter-font);
+    margin-top: 6px;
+    margin-left: 6px;
+}
+
+.add-btn-dashb {
+    margin-top: 6px;
+}
+
+.add-btn-dashb:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 5px;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1180px) {
+
+}
+
+@media (max-width: 835px) {
+    .right-dashb-container {
+        width: 70%;
+    }
+
+    .dash-word-header {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .right-dashb-container {
+        width: 70%;
+        padding-right: 2rem;
+    }
+
+    .dash-word-header {
+        font-size: 12px;
+    }
+
+    .left-dashb-container {
+        width: 30%;
+        top: 5rem;
+        margin-left: 1.55rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .db-pages {
+        display: block;
+    }
+
+    .right-dashb-container {
+        display: block;
+        width: 90%;
+        margin: 2.125rem 0 2.25rem 1.55rem;
+    }
+
+    .dash-word-header {
+        font-size: 12px;
+    }
+
+    .left-dashb-container {
+        display: flex;
+        width: 90%;
+        height: 40%;
+        margin: 5.125rem 1rem 0.25rem 1.55rem;
+        justify-content: center;
+    }
+}

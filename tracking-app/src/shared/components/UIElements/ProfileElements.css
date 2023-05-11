@@ -1,1 +1,32 @@
 @import '../Global.css';
+
+.profile-card__dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--inter-font);
+}
+
+.profile-image-container {
+    margin: 1rem;
+    width: 50%;
+    border-radius: 50%;
+    border: solid 3px black;
+}
+
+.profile-image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-info-container {
+    display: flex;
+    padding: 1rem;
+}
+
+.profile-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,9 @@
+@import "../Global.css";
+
+.Layout-Background {
+    background-image: url('../../../assets/images/background.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    /* background-position: center; */
+}
