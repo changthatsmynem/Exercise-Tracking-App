@@ -5,7 +5,7 @@
     place-content: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     border-radius: 32px;
-    padding: 48px;
+    padding: 30px;
     overflow: hidden;
     background: #D2D2D2;
 }
@@ -14,11 +14,16 @@
     place-content: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     border-radius: 32px;
-    background: transparent;
-    backdrop-filter: blur(100%);
-    margin: 20px;
     padding: 20px;
+    background-color: rgba(243, 189, 24, 0.8);
+    backdrop-filter: blur(100%);
     font-family: var(--nunito-font);
+}
+
+.card-layout-default:hover {
+    transform: scale(1.1);
+    background-color: rgba(243, 189, 24);
+    box-shadow:0 0 5px 7px var(--red);
 }
 
 .card-layout-success {
@@ -26,46 +31,30 @@
     place-content: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     border-radius: 32px;
-    background: #2cb422;
+    background: #68df5f;
     backdrop-filter: blur(70%);
-    margin: 20px;
-    padding: 20px;
     font-family: var(--nunito-font);
 }
 
-.card-layout-stop {
+.card-layout-success:hover {
+    transform: scale(1.1);
+    background-color: rgb(89, 196, 81);
+    box-shadow: 0 0 5px 7px var(--red);
+}
+
+.card-layout-cancel {
     position: relative;
     place-content: center;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     border-radius: 32px;
-    background: #d24b68;
+    background: #9d9d9d;
     backdrop-filter: blur(70%);
-    margin: 20px;
-    padding: 20px;
     font-family: var(--nunito-font);
 }
 
-@media (max-width: 768px) {
-
-    .card-layout {
-        width: 100%;
-    }
-
-    .card-layout-default {
-        width: 100%;
-        margin: 20px;
-        padding: 20px;
-    }
-
-    .card-layout-success {
-        width: 100%;
-        margin: 20px;
-        padding: 20px;
-    }
-
-    .card-layout-stop {
-        width: 100%;
-        margin: 20px;
-        padding: 20px;
-    }
+.card-layout-cancel:hover {
+    transform: scale(1.1);
+    background-color: rgb(125, 121, 121);
+    color: white;
+    box-shadow: 0 0 5px 7px var(--red);
 }

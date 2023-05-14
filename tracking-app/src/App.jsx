@@ -1,7 +1,8 @@
-// import React from "react";
 import { useState } from "react";
+
+//components
 import MainNav from "./shared/components/Navbar/MainNav";
-import LandingPage from "./shared/Pages/LandingPage";
+import LandingPage from "./user/pages/LandingPage/LandingPage";
 
 function App() {
   return (

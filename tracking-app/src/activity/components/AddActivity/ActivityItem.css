@@ -1,0 +1,52 @@
+@import '../../../shared/components//Global.css';
+/* 
+.regist-bg {
+    display: block;
+    margin-top: 0em;
+} */
+
+.regist-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 50px auto; */
+    max-width: 600px;
+    border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.icon-list {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+}
+
+.icon-selector-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 20px;
+  }
+  
+  .icon-selector-container img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .icon-selector-container img:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon-selector-container img.selected {
+    border: 2px solid blue;
+  }

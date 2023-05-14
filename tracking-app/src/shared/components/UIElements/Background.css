@@ -2,8 +2,7 @@
 
 .Layout-Background {
     background-image: url('../../../assets/images/background.png');
-    width: 100vw;
-    height: 100vh;
+    width: auto;
+    height: auto;
     background-size: cover;
-    /* background-position: center; */
 }

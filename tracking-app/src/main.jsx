@@ -1,15 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
-import LoginForm from "./shared/components/FormInput/LoginForm";
-import RegisterForm from "./shared/components/FormInput/RegisterForm";
-import FormActivityCard from "./shared/Pages/EditAct";
-import RegistComplete from "./shared/Pages/RegistComplete";
-import Dashboard from "./shared/Pages/Dashboard";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AddActivity from "./shared/Pages/AddActivity.jsx";
-import RegistComplete from "./shared/Pages/RegistComplete.jsx";
 
+//components
+import App from "./App";
+import LoginForm from "./user/pages/Login/LoginForm";
+import RegisterForm from "./user/pages/Register/RegisterForm";
+import EditActivityCard from "./activity/pages/EditAct";
+import RegistComplete from "./user/pages/Register/RegistComplete";
+import AddActivity from "./activity/pages/AddActivity";
+import Dashboard from "./user/pages/Dashboard/Dashboard";
+
+//router
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -38,7 +40,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/AddActivity",
+    path: "/add",
     element: <AddActivity />,
   },
 

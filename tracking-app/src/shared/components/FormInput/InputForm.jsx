@@ -14,6 +14,12 @@ const inputReducer = (state, action) => {
         value: action.value,
         isValid: validate(action.value, action.validators),
       };
+    case "TOUCH": {
+      return {
+        ...state,
+        isTouched: true,
+      };
+    }
     default:
       return state;
   }
@@ -21,8 +27,9 @@ const inputReducer = (state, action) => {
 
 const Input = (props) => {
   const [inputState, dispatch] = useReducer(inputReducer, {
-    value: "",
-    isValid: true,
+    value: props.initialValue || "",
+    isTOuched: false,
+    isValid: props.initialValid || false,
   });
 
   const changeHandler = ({ target }) => {
@@ -31,6 +38,10 @@ const Input = (props) => {
       value: target.value,
       validators: props.validators,
     });
+  };
+
+  const touchHandler = () => {
+    dispatch({ type: "TOUCH" });
   };
 
   // const [inputState, setInputState] = useState({ value: "", isValid: true });
@@ -49,6 +60,7 @@ const Input = (props) => {
         id={props.id}
         placeholder={props.placeholder}
         onChange={changeHandler}
+        onBlur={touchHandler}
         value={inputState.value}
         required
       />
@@ -57,6 +69,7 @@ const Input = (props) => {
         id={props.id}
         rows={props.rows || 3}
         onChange={changeHandler}
+        onBlur={touchHandler}
         value={inputState.value}
       />
     );
@@ -64,12 +77,12 @@ const Input = (props) => {
   return (
     <div
       className={`input-custom ${
-        !inputState.isValid && "input-custom--invalid"
+        !inputState.isValid && inputState.isTouched && "input-custom--invalid"
       }`}
     >
       <label htmlFor={props.id}>{props.label}</label>
       {element}
-      {!inputState.isValid && <p>{props.errorText}</p>}
+      {!inputState.isValid && inputState.isTouched && <p>{props.errorText}</p>}
     </div>
   );
 };

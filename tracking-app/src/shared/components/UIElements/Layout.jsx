@@ -6,7 +6,7 @@ const Layout = (props) => {
       className={`card-layout ${props.className} ${
         props.default === "default" && "card-layout-default"
       } ${props.default === "success" && "card-layout-success"} ${
-        props.default === "cancel" && "card-layout-stop"
+        props.default === "cancel" && "card-layout-cancel"
       }`}
       style={props.style}
     >

@@ -1,0 +1,231 @@
+@import '../../../shared/components/Global.css';
+
+.db-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.db-pages {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    width: auto;
+    height: auto;
+}
+
+.left-dashb-container {
+    position: fixed;
+    left: 0;
+    width: 24vw;
+    height: 80vh;
+    background-color: #f0f0f0;
+    margin: 100px 0px 20px 20px;
+    border-radius: 1.5rem;
+}
+
+.right-dashb-container {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    margin: 90px 20px 90px 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+    height: auto;
+    background: transparent;
+    opacity: 1;
+    backdrop-filter: blur(100px);
+    border-radius: 32px;
+    border: solid 7px rgb(164, 164, 164);
+    overflow: hidden;
+}
+
+.right-dashb-container::-webkit-scrollbar {
+    display: none;
+}
+
+.header-right-section {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px 15px;
+    padding: 20px;
+    font-family: var(--inter-font);
+}
+
+.add-btn-dashb  {
+    position: absolute;
+    border-radius: 5rem;
+    transition: 0.3s;
+    font-weight: bold;
+    top: 6rem;
+    right: 2rem;
+    margin: 1rem;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.add-btn-dashb > span:nth-child(1) {
+    display: none;
+}
+
+.add-btn-dashb:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 2px 5px;
+    color: white;
+    background-color: rgb(57, 91, 201);
+}
+
+@media (max-width: 1180px) {
+    .add-btn-dashb > span:nth-child(2) {
+        display: none;
+    }
+
+    .add-btn-dashb > span:nth-child(1) {
+        font-size: 2.25rem;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        line-height: normal;
+        padding: 10px 10px 15px 10px;
+    }
+
+    .add-btn-dashb {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: fixed;
+        top: 45rem;
+        bottom: 0px;
+        right: 1rem;
+        z-index: 999;
+        background-color: var(--green);
+        border: none;
+        border-radius: 50%;
+        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        will-change: transform;
+        width: 80px;
+        height: 80px;
+    }
+
+    .add-btn-dashb:hover {
+        opacity: 1;
+        border-radius: 2rem;
+        padding: 1em 1.5em;
+        width: 20%;
+        height: 8%;
+        margin: 0 0.5rem;
+    }
+
+    .add-btn-dashb:hover > .add-activity-text {
+        display: block;
+    }
+
+    .add-btn-dashb:hover > .plus-response {
+        display: none;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .db-pages {
+        display: block;
+        height: auto;
+    }
+
+    .header-right-section {
+        display: flex;
+        justify-content: center;
+        padding: 20px auto;
+        font-family: var(--inter-font);
+    }
+
+    .add-btn-dashb:hover {
+        opacity: 1;
+        border-radius: 2rem;
+        padding: 1em 1.5em;
+        width: 30%;
+        height: 8%;
+        margin: 0 0.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-right-section {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 20px auto;
+        font-family: var(--inter-font);
+    }
+
+    .left-dashb-container {
+        position: relative;
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin: 5.125rem 0 1.55rem 2.15rem;
+        justify-content: center;
+    }
+
+    .right-dashb-container {
+        display: block;
+        width: 90%;
+        margin: 2.125rem 2.15rem 1.55rem;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .header-right-section {
+        display: flex;
+        justify-content: center;
+        padding: 20px auto;
+        font-family: var(--inter-font);
+    }
+
+    .right-dashb-container {
+        display: block;
+        width: 90%;
+        margin: 2.125rem 2.15rem 1.55rem;
+    }
+
+    .dash-word-header {
+        font-size: 12px;
+    }
+
+    .left-dashb-container {
+        position: relative;
+        display: flex;
+        width: 90%;
+        height: auto;
+        padding-bottom: 1rem;
+        margin: 5.125rem 1rem 0.25rem 1.55rem;
+        justify-content: center;
+    }
+
+    .add-btn-dashb:hover {
+        opacity: 1;
+        border-radius: 2rem;
+        padding: 1em 1.5em;
+        width: 37%;
+        height: 8%;
+        margin: 0 0.5rem;
+    }
+}

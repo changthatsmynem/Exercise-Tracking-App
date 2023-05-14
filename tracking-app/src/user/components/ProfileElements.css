@@ -1,0 +1,96 @@
+@import '../../shared//components/Global.css';
+
+.profile-card__dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: var(--inter-font);
+}
+
+.profile-image-container {
+    margin: 1rem;
+    width: 50%;
+    border-radius: 50%;
+    border: solid 3px black;
+}
+
+.profile-image-container img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.profile-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.profile-name-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 5px;
+    margin: 20px;
+    background-color: rgb(251, 211, 160);
+}
+
+.profile-details-container {
+    display: inline-flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1.5rem;
+    padding: 5px;
+}
+
+.age-profile {
+    background-color: azure;
+    padding: 0 1.65rem 3.75rem 1.65rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 3px;
+}
+
+.height-profile {
+    background-color: azure;
+    padding: 0 0.85rem 3.75rem 0.85rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 3px;
+}
+
+.weight-profile {
+    background-color: azure;
+    padding: 0 0.75rem 3.75rem 0.75rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 3px;
+}
+
+/* edit profile button styles */
+.edit-profile-container {
+    padding: 5px;
+    margin-top: 6rem;
+}
+
+.edit-profile-btn {
+    background-color: rgb(106, 0, 206);
+    border-radius: 0.75rem;
+    padding: 20px;
+}
+
+.edit-profile-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 5px 7px;
+    color: black;
+    background-color: beige;
+}
+
+.edit-profile-icon {
+    margin-right: 10px;
+}
+
+.edit-profile-btn > div {
+    display: flex;
+    align-items: center;
+}
