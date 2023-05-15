@@ -4,8 +4,8 @@ import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 //components
-import Layout from "../../../shared/components/UIElements/Layout";
-import Button from "../../../shared/components/UIElements/Button";
+import Layout from "../../shared/components/UIElements/Layout";
+import Button from "../../shared/components/UIElements/Button";
 
 //style
 import "./CardActivity.css";
@@ -27,8 +27,10 @@ const CardActivity = (props) => {
 
   return (
     <Layout default={layout} className="card-activity-layout">
-      <h3 className="activity-card__header">{props.header}</h3>
-      <div className="activity-type__card">{props.activity}</div>
+      <div className="activity-header">
+        <h3 className="activity-card__header">{props.header}</h3>
+        <div className="activity-type__card">{props.activity}</div>
+      </div>
       <div className="date-input__card">
         <p>
           <b>Start Date:</b> {props.startDate}

@@ -16,20 +16,26 @@
 }
 
 .left-dashb-container {
-    position: fixed;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     left: 0;
-    width: 24vw;
-    height: 80vh;
+    width: 26%;
+    height: auto;
     background-color: #f0f0f0;
-    margin: 100px 0px 20px 20px;
+    margin: 90px 20px 20px;
     border-radius: 1.5rem;
+    box-shadow: rgb(177, 171, 171) 0 5px 20px;
+    padding: 20px;
 }
 
 .right-dashb-container {
     position: absolute;
     right: 0;
     width: 70%;
-    margin: 90px 20px 90px 10px;
+    margin: 90px 10px 90px 10px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -115,7 +121,7 @@
         background-color: var(--green);
         border: none;
         border-radius: 50%;
-        transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+        transition: all 600ms cubic-bezier(.23, 1, 0.32, 1);
         user-select: none;
         -webkit-user-select: none;
         touch-action: manipulation;
@@ -140,7 +146,6 @@
     .add-btn-dashb:hover > .plus-response {
         display: none;
     }
-
 }
 
 @media (max-width: 900px) {
@@ -156,6 +161,22 @@
         font-family: var(--inter-font);
     }
 
+    .left-dashb-container {
+        position: relative;
+        display: flex;
+        width: 90%;
+        height: 700px;
+        margin: 6.25rem 0 1.55rem 1.75rem;
+        justify-content: center;
+    }
+
+    .right-dashb-container {
+        position: relative;
+        display: flex;
+        width: 90%;
+        margin: 2.125rem 2.15rem 1.55rem;
+    }
+
     .add-btn-dashb:hover {
         opacity: 1;
         border-radius: 2rem;
@@ -167,6 +188,11 @@
 }
 
 @media (max-width: 768px) {
+    .db-pages {
+        display: block;
+        height: auto;
+    }
+
     .header-right-section {
         display: flex;
         justify-content: center;
@@ -180,7 +206,7 @@
         display: flex;
         width: 90%;
         height: auto;
-        margin: 5.125rem 0 1.55rem 2.15rem;
+        margin: 6.25rem 0 1.55rem 1.75rem;
         justify-content: center;
     }
 
@@ -203,7 +229,7 @@
     .right-dashb-container {
         display: block;
         width: 90%;
-        margin: 2.125rem 2.15rem 1.55rem;
+        margin: 2.125rem 1.55rem 1.55rem;
     }
 
     .dash-word-header {

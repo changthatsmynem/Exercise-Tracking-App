@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 //component
+import Avatar from "./Avatar";
 import Button from "../../shared/components/UIElements/Button";
 import EditIcon from "@mui/icons-material/Edit";
 
@@ -19,32 +20,36 @@ const ProfileElements = (props) => {
   return (
     <div className="profile-card__dashboard" style={props.style}>
       <div className="profile-image-container">
-        <img src={props.user ? props.userImg : defaultImg} alt={props.alt} />
+        <Avatar
+          image={props.user ? props.userImg : defaultImg}
+          alt={props.alt}
+        />
+      </div>
+      <div className="profile-name-header">
+        <h2>
+          <span className="profile-first-name">{props.name}</span>
+        </h2>
       </div>
       <div className="profile-info-container">
-        <div className="profile-name-header">
-          <h2>
-            Name:
-            <span className="profile-first-name">{props.firstName}</span>
-            <span className="profile-last-name">{props.lastName}</span>
-          </h2>
-        </div>
         <div className="profile-details-container">
           <div className="age-profile">
-            <p>Age: {props.age}</p>
+            <p>Age</p>
+            <div className="age-number">{props.profile.age}</div>
           </div>
           <div className="height-profile">
-            <p>Height: {props.height}</p>
+            <p>Height</p>
+            <div className="height-number">{props.profile.height}</div>
           </div>
           <div className="weight-profile">
-            <p>Weight: {props.weight}</p>
+            <p>Weight</p>
+            <div className="weight-number">{props.profile.weight}</div>
           </div>
         </div>
       </div>
       <div className="edit-profile-container">
-        <Button className="edit-profile-btn">
+        <Button to="/editprofile" className="edit-profile-btn">
           <div>
-            <EditIcon className="edit-profile-icon"/>
+            <EditIcon className="edit-profile-icon" />
             <h4>EDIT PROFILE</h4>
           </div>
         </Button>

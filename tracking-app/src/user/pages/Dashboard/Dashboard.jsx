@@ -2,7 +2,7 @@ import { useState } from "react";
 
 //component
 import MainNav from "../../../shared/components/Navbar/MainNav";
-import ActivityList from "../../../activity/components/CardActivity/ActivityList";
+import ActivityList from "../../../activity/components/ActivityList";
 import Button from "../../../shared/components/UIElements/Button";
 import Background from "../../../shared/components/UIElements/Background";
 import ProfileElements from "../../components/ProfileElements";
@@ -16,7 +16,6 @@ import DirectionsRunIcon from "@mui/icons-material/DirectionsRun";
 import DirectionsBikeIcon from "@mui/icons-material/DirectionsBike";
 import HikingIcon from "@mui/icons-material/Hiking";
 import PoolIcon from "@mui/icons-material/Pool";
-
 
 // const DUMMY = []
 const DUMMY = [
@@ -121,6 +120,12 @@ const DUMMY = [
   },
 ];
 
+const PROFILE = {
+  age: 25,
+  height: 170,
+  weight: 65,
+};
+
 const Dashboard = (props) => {
   const [activities, setActivities] = useState([]);
   return (
@@ -133,7 +138,7 @@ const Dashboard = (props) => {
             <span className="add-activity-text">Add Activity</span>
           </Button>
           <div className="left-dashb-container">
-            <ProfileElements />
+            <ProfileElements profile={PROFILE} />
           </div>
           <div className="right-dashb-container">
             <div className="header-right-section">

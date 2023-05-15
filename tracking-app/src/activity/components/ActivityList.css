@@ -1,4 +1,4 @@
-@import '../../../shared/components/Global.css';
+@import '../../shared/components/Global.css';
 
 .activity-list-item {
     display: grid;

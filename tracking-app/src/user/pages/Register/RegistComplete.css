@@ -1,12 +1,12 @@
 @import '../../../shared/components/Global.css';
 
 .regist-complete-bg {
-    width: 100w;
+    width: 100vw;
     height: 100vh;
 }
 
 .regist-container {
-    font-family: var(--nunito-font);
+    font-family: var(--inter-font);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,8 +15,7 @@
     text-align: center;
     padding: 20px;
     background-color: rgb(211, 211, 211);
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border-radius: 5rem;
     background-color: #ccc;
     margin: 10rem auto;
 }
@@ -26,11 +25,13 @@
 }
 
 .regist-container p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .regist-container a {
     text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
     padding: 8px;
 }
 

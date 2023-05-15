@@ -46,7 +46,7 @@ const router = createBrowserRouter([
 
   {
     path: "/edit",
-    element: <FormActivityCard />,
+    element: <EditActivityCard />,
   },
 ]);
 

@@ -1,4 +1,4 @@
-@import '../../../shared/components/Global.css';
+@import '../../shared/components/Global.css';
 
 .card-activity-layout {
     margin: 20px;
@@ -6,6 +6,13 @@
 
 .card-activity-layout:hover > .activity-description-box {
     color: black;
+}
+
+.activity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
 }
 
 .activity-card__header {
@@ -17,8 +24,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    transform: scale(1.5);
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 15px;
@@ -34,7 +40,8 @@
     display: flex;
     height: auto;
     margin-bottom: 15px;
-    justify-content: center;
+    padding-left: 15px;
+    justify-content: flex-start;
     align-items: center;
     overflow: hidden;
 }

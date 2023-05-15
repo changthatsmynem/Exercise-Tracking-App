@@ -10,14 +10,20 @@
 
 .profile-image-container {
     margin: 1rem;
-    width: 50%;
-    border-radius: 50%;
-    border: solid 3px black;
+    width: 10rem;
+    height: 10rem;
 }
 
-.profile-image-container img {
-    width: 100%;
-    object-fit: cover;
+.profile-name-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    padding: 5px;
+    margin: 5px;
+    width: 325px;
+    height: 100px;
+    background-color: rgb(251, 211, 160);
 }
 
 .profile-info-container {
@@ -26,46 +32,55 @@
     padding: 1rem;
 }
 
-.profile-name-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 1.25rem;
-    padding: 5px;
-    margin: 20px;
-    background-color: rgb(251, 211, 160);
-}
-
 .profile-details-container {
     display: inline-flex;
     justify-content: space-evenly;
     gap: 1rem;
     font-size: 1.25rem;
-    font-weight: bold;
     margin: 1.5rem;
     padding: 5px;
 }
 
 .age-profile {
+    text-align: center;
     background-color: azure;
-    padding: 0 1.65rem 3.75rem 1.65rem;
+    font-size: 1rem;
+    padding: 0.55rem 1.5rem 1rem;
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 4px;
 }
 
 .height-profile {
+    text-align: center;
     background-color: azure;
-    padding: 0 0.85rem 3.75rem 0.85rem;
+    font-size: 1rem;
+    padding: 0.55rem 1.15rem 1rem;
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 4px;
 }
 
 .weight-profile {
+    text-align: center;
+    font-size: 1rem;
     background-color: azure;
-    padding: 0 0.75rem 3.75rem 0.75rem;
+    padding: 0.55rem 1.15rem 1rem;
     border-radius: 1rem;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 3px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 3px 4px;
+}
+
+.age-number {
+    font-size: 2rem;
+    padding-top: 1rem; 
+}
+
+.weight-number {
+    font-size: 2rem;
+    padding-top: 1rem; 
+}
+
+.height-number {
+    font-size: 2rem;
+    padding-top: 1rem; 
 }
 
 /* edit profile button styles */
@@ -77,6 +92,7 @@
 .edit-profile-btn {
     background-color: rgb(106, 0, 206);
     border-radius: 0.75rem;
+    box-shadow: rgba(0, 0, 0, 0.55) 0 3px 4px;
     padding: 20px;
 }
 
@@ -93,4 +109,21 @@
 .edit-profile-btn > div {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 1380px) {
+    .profile-image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-name-header {
+        width: 305px;
+
+    }
+
+    .profile-details-container {
+        
+    }
 }
