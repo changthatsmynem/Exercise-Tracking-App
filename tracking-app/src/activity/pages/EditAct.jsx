@@ -1,7 +1,12 @@
-import {useState} from "react";
+import { useState } from "react";
 
 //component
 import MainNav from "../../shared/components/Navbar/MainNav";
+import WALK from "../../assets/images/walk_480.png";
+import RUN from "../../assets/images/running_480.png";
+import BICYCLE from "../../assets/images/bicycle_480.png";
+import HIKE from "../../assets/images/hiking_480.png";
+import SWIM from "../../assets/images/swimming_480.png";
 
 //style
 import "./EditAct.css";
@@ -17,7 +22,7 @@ function EditActivityCard() {
     <div>
       <MainNav />
       <div className="EditBackground">
-        <HeaderActivityCard />
+        {/* <HeaderActivityCard /> */}
         <ActivitiesChoice />
         <ActivityInput />
       </div>
@@ -25,14 +30,14 @@ function EditActivityCard() {
   );
 }
 
-function HeaderActivityCard() {
-  return (
-    <div className="Header">
-      <h1 className="AddAct">Edit Activity</h1>
-      <p className="ActType">Activity Type</p>
-    </div>
-  );
-}
+// function HeaderActivityCard() {
+//   return (
+//     <div className="Header">
+//       <h1 className="AddAct">Edit Activity</h1>
+//       <p className="ActType">Activity Type</p>
+//     </div>
+//   );
+// }
 
 function ActivitiesChoice() {
   return (
@@ -40,32 +45,31 @@ function ActivitiesChoice() {
       <div className="Icon-activitycard">
         <img
           onClick={() => onSelectedActivity}
-          // ../ ทำไมถึงย้อนไปไกลจัง
-          src="../src/shared/components/icons/walk_480.png"
+          src={WALK}
           alt="Walking"
         />
 
         <img
           onClick={() => onSelectedActivity}
-          src="../src/shared/components/icons/running_480.png"
+          src={RUN}
           alt="Running"
         />
 
         <img
           onClick={() => onSelectedActivity}
-          src="../src/shared/components/icons/hiking_480.png"
+          src={HIKE}
           alt="Hiking"
         />
 
         <img
           onClick={() => onSelectedActivity}
-          src="../src/shared/components/icons/bicycle_480.png"
+          src={BICYCLE}
           alt="Cycling"
         />
 
         <img
           onClick={() => onSelectedActivity}
-          src="../src/shared/components/icons/swimming_480.png"
+          src={SWIM}
           alt="Swimming"
         />
       </div>
@@ -106,7 +110,7 @@ function ActivityInput() {
           type="text"
           placeholder="Distance                                                                                                   KM"
         />
-        <button id="submit"> Submit </button>
+        {/* <button id="submit"> Submit </button> */}
       </div>
     </div>
   );

@@ -1,0 +1,8 @@
+@import '../../shared/components/Global.css';
+
+.tracking-activity-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

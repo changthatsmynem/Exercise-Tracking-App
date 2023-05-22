@@ -20,10 +20,10 @@ const AddActivity = () => {
   const [data, setData] = useState({
     activityType: "",
     activityName: "",
-    distance: "",
     activityDetail: "",
     startTime: "",
     finishTime: "",
+    distance: "",
     file: "",
   });
 
@@ -67,9 +67,6 @@ const AddActivity = () => {
     if (!data.activityDetail) {
       errors.activityDetail = "Activity detail is required!";
     }
-    // if (!data.distance){
-    //   errors.distance = "Distance is required!";
-    // }
     if (!data.startTime) {
       errors.startTime = "Start time is required!";
     }
@@ -82,12 +79,13 @@ const AddActivity = () => {
   return (
     <>
       <MainNav />
-      <Background>
+      <Background className="add-activity-bg">
         <div className="add-activity-container">
-          <h1>Add Activity</h1>
-          <h4>Select an activity</h4>
-
-          <div className="activity-imgs">
+          <div className="add-activity-header">
+            <h1>Add Activity</h1>
+            <h4>Select an activity</h4>
+          </div>
+          <div className="add-activity-icons">
             <button
               onClick={() => handleClick("Biking")}
               style={{
@@ -132,7 +130,7 @@ const AddActivity = () => {
               <img src={SWIM} alt="swimming-icon" />
             </button>
           </div>
-          <div id="error">
+          <div className="add-activity-forminput">
             <form onSubmit={handleSubmit} action="/">
               <div>
                 <label id="activityType">Activity: {selectedActivity}</label>
@@ -142,7 +140,7 @@ const AddActivity = () => {
                 </p>
               </div>
               <div>
-                <label>Activity name</label>
+                <label id="activityName">Activity name</label>
                 <br />
                 <input
                   type="text"
@@ -153,7 +151,7 @@ const AddActivity = () => {
                 <p className="error-message">{formErrors.activityName}</p>
               </div>
               <div>
-                <label>Activity detail</label>
+                <label id="activityDetail">Activity detail</label>
                 <br />
                 <input
                   type="text"
@@ -164,7 +162,7 @@ const AddActivity = () => {
                 <p className="error-message">{formErrors.activityDetail}</p>
               </div>
               <div>
-                <label>Start time</label>
+                <label className="startTime">Start time</label>
                 <br />
                 <input
                   type="datetime-local"
@@ -175,7 +173,7 @@ const AddActivity = () => {
                 <p className="error-message">{formErrors.startTime}</p>
               </div>
               <div>
-                <label>Finish time</label>
+                <label className="finishTime">Finish time</label>
                 <br />
                 <input
                   type="datetime-local"
@@ -186,7 +184,7 @@ const AddActivity = () => {
                 <p className="error-message">{formErrors.finishTime}</p>
               </div>
               <div>
-                <label>Distance (optional)</label>
+                <label id="distance">Distance (optional)</label>
                 <br />
                 <input
                   type="number"
@@ -195,10 +193,9 @@ const AddActivity = () => {
                   placeholder="km"
                   onChange={handleChange}
                 />
-                {/* <p className="error-message">{formErrors.distance}</p> */}
               </div>
               <div>
-                <label>Attach an image</label>
+                <label id="file">Attach an image</label>
                 <br />
                 <input
                   type="file"

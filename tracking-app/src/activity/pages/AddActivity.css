@@ -1,13 +1,19 @@
 @import '../../shared/components/Global.css';
 
-form {
+.add-activity-bg {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.add-activity-forminput form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-input {
+.add-activity-forminput input {
     border-radius: 5px;
     width: 500px;
     height: 30px;
@@ -16,7 +22,7 @@ input {
     padding-left: 5px;
 }
 
-input:focus {
+.add-activity-forminput input:focus {
     border: 2px solid #818181;
     background-color: #efeeee;
 }
@@ -40,6 +46,7 @@ input:focus {
 }
 
 .add-activity-container {
+    font-family: var(--nunito-font);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +64,14 @@ input:focus {
 
 }
 
-.add-activity-container h1 {
+.add-activity-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-activity-header h1 {
     border-bottom: 2px solid #818181;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -67,7 +81,7 @@ input:focus {
     font-weight: 800;
 }
 
-.add-activity-container h4 {
+.add-activity-header h4 {
     margin-top: 10px;
     font-size: 20px;
 }
@@ -76,7 +90,7 @@ label {
     font-size: 15px;
 }
 
-.activity-imgs {
+.add-activity-icons {
     display: flex;
     justify-content: center;
     margin: 0px 450px -10px 450px;
@@ -85,13 +99,13 @@ label {
     border-radius: 5px;
 }
 
-.activity-imgs>button {
+.add-activity-icons > button {
     border: 0;
     border-radius: 5px;
     background-color: transparent;
 }
 
-.activity-imgs img {
+.add-activity-icons img {
     height: 50px;
     width: 50px;
     background-color: transparent;
@@ -100,7 +114,7 @@ label {
     transition: 200ms;
 }
 
-.activity-imgs img:hover {
+.add-activity-icons img:hover {
     background-color: white;
     cursor: pointer;
 }

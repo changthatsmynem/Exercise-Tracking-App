@@ -18,12 +18,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.25rem;
     padding: 5px;
     margin: 5px;
     width: 325px;
     height: 100px;
-    background-color: rgb(251, 211, 160);
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 5px 6px;
+    backdrop-filter: blur(20);
+    border-radius: 1rem;
+}
+
+.profile-name-span {
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 1.25rem;
 }
 
 .profile-info-container {
@@ -37,7 +46,7 @@
     justify-content: space-evenly;
     gap: 1rem;
     font-size: 1.25rem;
-    margin: 1.5rem;
+    margin: 0.1rem 1.5rem 1.5rem 1.5rem;
     padding: 5px;
 }
 
@@ -124,6 +133,6 @@
     }
 
     .profile-details-container {
-        
+        display: flex;
     }
 }

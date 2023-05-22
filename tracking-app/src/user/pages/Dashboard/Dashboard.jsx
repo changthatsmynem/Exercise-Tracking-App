@@ -121,6 +121,7 @@ const DUMMY = [
 ];
 
 const PROFILE = {
+  name: "George Smith W. Bush",
   age: 25,
   height: 170,
   weight: 65,

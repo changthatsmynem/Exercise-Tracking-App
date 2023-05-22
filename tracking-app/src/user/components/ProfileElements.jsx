@@ -4,14 +4,13 @@ import { useState } from "react";
 import Avatar from "./Avatar";
 import Button from "../../shared/components/UIElements/Button";
 import EditIcon from "@mui/icons-material/Edit";
+import TrackingStatus from "./TrackingStatus";
 
 //style
 import "./ProfileElements.css";
 
 //image
 import DEFAULT_AVATAR from "../../assets/images/default-avatar.jpeg";
-
-const PROFILE = {};
 
 const ProfileElements = (props) => {
   const defaultImg = DEFAULT_AVATAR;
@@ -21,13 +20,13 @@ const ProfileElements = (props) => {
     <div className="profile-card__dashboard" style={props.style}>
       <div className="profile-image-container">
         <Avatar
-          image={props.user ? props.userImg : defaultImg}
+          image={props.userImg ? props.userImg : defaultImg}
           alt={props.alt}
         />
       </div>
       <div className="profile-name-header">
         <h2>
-          <span className="profile-first-name">{props.name}</span>
+          <span className="profile-name-span">{props.profile.name}</span>
         </h2>
       </div>
       <div className="profile-info-container">
@@ -46,6 +45,7 @@ const ProfileElements = (props) => {
           </div>
         </div>
       </div>
+      <TrackingStatus />
       <div className="edit-profile-container">
         <Button to="/editprofile" className="edit-profile-btn">
           <div>

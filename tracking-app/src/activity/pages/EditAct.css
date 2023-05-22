@@ -2,16 +2,14 @@
 
     .EditBackground {
         background-color: #F3BD18;
-        box-sizing: border-box;
         place-items: center;
         border: 1px solid #000000;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 20px;
-        margin: 140px 160px 0;
-        
+        margin: 10px 80px;
     }
 
-    .Header{
+    /* .Header{
         text-align: center;
         padding-top: 39px;
     }
@@ -29,7 +27,7 @@
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
-    }
+    } */
 
     .Icon-activitycard {
         display: flex;
@@ -40,7 +38,7 @@
     }
 
     .Icon-activitycard > img {
-        width: 150px;
+        transform: scale(0.4);
     }
 
     .ActivityInput-ParentGroup {
@@ -54,7 +52,7 @@
         margin-left: 50px;
         display: flex;
         flex-direction: column;
-        padding-bottom: 75px;
+        padding-bottom: 15px;
     }
 
     .gc1 {
@@ -120,12 +118,12 @@
     }
 
 
-    .ActivityInput-group3{
+    /* .ActivityInput-group3{
         display: flex;
         justify-content: space-evenly;
         gap: 270px;
         padding-bottom: 40px;
-    }
+    } */
 
 
     #distance {
